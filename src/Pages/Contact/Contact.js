@@ -1,39 +1,24 @@
 import React from "react";
 import background from "../../assets/images/appointment.png";
+import PrimaryButton from "../Shared/PrimaryButton/PrimaryButton";
 
 const Contact = () => {
   return (
-    <section className="my-6" style={{ background: `url(${background})` }}>
+    <section className="my-6 py-20 px-4" style={{ background: `url(${background})` }}>
       <div className="text-center">
-        <h4 className="text-xl font-bold text-teal-400">Contact Us</h4>
-        <h2 className="text-3xl text-white">Stay Connected with Us</h2>
+        <h3 className="text-xl font-bold text-teal-500">Contact Us</h3>
+        <h2 className="text-4xl text-white">Stay Connected with Us</h2>
       </div>
-      <div class="hero min-h-screen">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          {/* <div class="text-center lg:text-left">
-            <h1 class="text-5xl font-bold">Login now!</h1>
-            <p class="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-              a id nisi.
-            </p>
-          </div> */}
-          <div class="card flex-shrink-0 w-full max-w-sm">
-            <div class="card-body">
-              <div class="form-control">
-                <input type="text" placeholder="Email" class="input input-bordered" />
-              </div>
-              <div class="form-control">
-                <input type="text" placeholder="Subject" class="input input-bordered" />
-              </div>
-              <div>
-                <textarea class="textarea" placeholder="Bio"></textarea>
-              </div>
-              <div class="form-control mt-6">
-                <button class="btn btn-primary">Login</button>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div>
+        <form className="grid grid-cols-1 gap-3 justify-items-center my-6">
+          <input type="email" name="email" placeholder="Email Address" class="input input-bordered w-full max-w-sm" />
+
+          <input type="text" name="subject" placeholder="Subject" class="input input-bordered w-full max-w-sm" />
+
+          <textarea class="textarea textarea-bordered w-full h-24 max-w-sm" placeholder="Your Message"></textarea>
+
+          <PrimaryButton>Submit</PrimaryButton>
+        </form>
       </div>
     </section>
   );
