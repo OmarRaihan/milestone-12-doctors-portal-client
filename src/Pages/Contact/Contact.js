@@ -11,11 +11,11 @@ const Contact = () => {
       </div>
       <div>
         <form className="grid grid-cols-1 gap-3 justify-items-center my-6">
-          <input type="email" name="email" placeholder="Email Address" class="input input-bordered w-full max-w-sm" />
+          <input type="email" name="email" placeholder="Email Address" className="input input-bordered w-full max-w-sm" />
 
-          <input type="text" name="subject" placeholder="Subject" class="input input-bordered w-full max-w-sm" />
+          <input type="text" name="subject" placeholder="Subject" className="input input-bordered w-full max-w-sm" />
 
-          <textarea class="textarea textarea-bordered w-full h-24 max-w-sm" placeholder="Your Message"></textarea>
+          <textarea className="textarea textarea-bordered w-full h-24 max-w-sm" placeholder="Your Message"></textarea>
 
           <PrimaryButton>Submit</PrimaryButton>
         </form>
